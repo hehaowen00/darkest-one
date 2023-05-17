@@ -25,7 +25,7 @@ local theme = lush(function(injected_functions)
     lCursor      { gui = "reverse" }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM     { gui = "reverse" }, -- Like Cursor, but used when in IME mode |CursorIM|
     CursorColumn { bg = bg1 }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine   { bg = bg1 }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLine   { }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory    { fg = blue }, -- Directory names (and other special names in listings)
     -- DiffAdd      { }, -- Diff mode: Added line |diff.txt|
     -- DiffChange   { }, -- Diff mode: Changed line |diff.txt|
